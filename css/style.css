@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+@import url('"https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Patua+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"');
+
+body {
+  margin: 0;
+  font-family: 'Varela Round', Arial, sans-serif;
+  background-color: rgb(251, 253, 255);
+}
+
+/* Logo */
+.logo-img {
+  width: 15em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+.navbar {
+  background-color: #ffffff;
+}
+
+.nav-link.custom-link {
+  color: #2e4da3;
+  font-size: 20px;
+  transition: color 0.5s;
+}
+
+.nav-link.custom-link:hover {
+  color: #b2d1f5;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+/* Redes sociales */
+.redes {
+  background-color: #32476c;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.redes img {
+  width: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.redes img:hover {
+  transform: scale(1.15);
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dec hr {
+  color: #7a7a7a;
+  margin-top: -6px;
+}
+
+/* Tablas */
+.table {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.table-dark {
+  background-color: #2e4da3;
+  color: white;
+}
+
+.nosotros {
+  background-color: #f5f8ff;
+  padding: 60px 20px;
+}
+
+.nosotros h1 {
+  font-family: 'Patua One', Arial, sans-serif;
+  font-size: 3rem;
+  color: #798fd4;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Contenedor principal */
+.nosotroscont {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Texto */
+.texto {
+  flex: 1 1 500px;
+  background-color: #9ca9ee;
+  color: #000311;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Imagen */
+.imgnosotros {
+  flex: 1 1 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgnosotros img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  object-fit: cover;
+}
+
+.imgnosotros img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Secciones de servicios */
+.servicio,
+.servicio2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  padding: 40px 20px;
+  font-family: 'Varela Round', sans-serif;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+}
+
+.servicio {
+  background-image: url('../img/rescate.jpeg');
+}
+
+.servicio2 {
+  background-image: url('../img/rehabilitacion.jpeg');
+}
+
+.servicio h2,
+.servicio2 h2 {
+  font-family: 'Patua One', Arial, sans-serif;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 5px 15px;
+  display: inline-block;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.servicio h2 {
+  color: #39489e;
+}
+
+.servicio2 h2 {
+  color: #6372c5;
+}
+
+.servicio p,
+.servicio2 p {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Donaciones */
+.dontext {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 40px 0;
+  font-family: 'Patua One', Arial, sans-serif;
+}
+
+.dontext h1 {
+  color: #83a0db;
+  font-weight: 700;
+}
+
+.dontext h2 {
+  color: #2f4c88;
+  font-weight: 500;
+}
+
+a button {
+  text-decoration: none;
+}
+
+/* Carrusel */
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+  z-index: 0;
+}
+
+.carousel-inner img {
+  max-height: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 80%;
+  background: rgba(0, 0, 50, 0.6);
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 50, 0.8);
+  z-index: 10;
+}
+
+.carousel-text h1 {
+  color: #cce0ff;
+  font-family: 'Patua One', Arial, sans-serif;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  margin-bottom: 0.3em;
+  font-size: 5rem;
+}
+
+.carousel-text h2 {
+  color: #99bbff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 0.5em;
+  font-size: 1.7rem;
+}
+
+.carousel-text p {
+  color: #dde9ff;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: gray !important;
+  opacity: 0.8;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+/* Cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 350px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  justify-content: space-between;
+}
+
+.card {
+  height: 100%;
+}
+
+h4 {
+  color: #ffffff;
+  margin-top: 10px;
+  background-color:#5c8ceb;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
