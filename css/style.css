@@ -1,14 +1,16 @@
+/* ===================== FUENTES ===================== */
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
 @import url('"https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Patua+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"');
 
+/* ===================== ESTILOS BODY ===================== */
 body {
   margin: 0;
   font-family: 'Varela Round', Arial, sans-serif;
   background-color: rgb(251, 253, 255);
 }
 
-/* Logo */
+/* ===================== LOGO ===================== */
 .logo-img {
   width: 15em;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -18,17 +20,18 @@ body {
   transform: scale(1.05);
 }
 
+/* ===================== NAVBAR ===================== */
 .navbar {
   background-color: #ffffff;
 }
 
-.nav-link.custom-link {
+.nav-link .custom-link {
   color: #2e4da3;
   font-size: 20px;
   transition: color 0.5s;
 }
 
-.nav-link.custom-link:hover {
+.nav-link .custom-link:hover {
   color: #b2d1f5;
 }
 
@@ -36,7 +39,7 @@ body {
   align-items: center;
 }
 
-/* Redes sociales */
+/* ===================== REDES SOCIALES ===================== */
 .redes {
   background-color: #32476c;
   padding: 20px;
@@ -55,7 +58,7 @@ body {
   transform: scale(1.15);
 }
 
-/* Footer */
+/* ===================== FOOTER ===================== */
 .footer {
   display: flex;
   justify-content: center;
@@ -67,17 +70,13 @@ body {
   margin-top: -6px;
 }
 
-/* Tablas */
+/* ===================== TABLAS ===================== */
 .table {
   max-width: 600px;
   margin: 0 auto 40px auto;
 }
 
-.table-dark {
-  background-color: #2e4da3;
-  color: white;
-}
-
+/* ===================== NOSOTROS ===================== */
 .nosotros {
   background-color: #f5f8ff;
   padding: 60px 20px;
@@ -91,7 +90,6 @@ body {
   margin-bottom: 40px;
 }
 
-/* Contenedor principal */
 .nosotroscont {
   display: flex;
   flex-wrap: wrap;
@@ -102,7 +100,6 @@ body {
   margin: 0 auto;
 }
 
-/* Texto */
 .texto {
   flex: 1 1 500px;
   background-color: #9ca9ee;
@@ -114,10 +111,9 @@ body {
   justify-content: center;
   font-size: 1.2rem;
   line-height: 1.6;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Imagen */
 .imgnosotros {
   flex: 1 1 500px;
   display: flex;
@@ -130,7 +126,7 @@ body {
   height: auto;
   max-height: 400px;
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   object-fit: cover;
 }
 
@@ -140,7 +136,7 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Secciones de servicios */
+/* ===================== SERVICIOS ===================== */
 .servicio,
 .servicio2 {
   background-size: cover;
@@ -164,24 +160,21 @@ body {
 .servicio h2,
 .servicio2 h2 {
   font-family: 'Patua One', Arial, sans-serif;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.1);
   padding: 5px 15px;
   display: inline-block;
   border-radius: 8px;
   margin-bottom: 15px;
 }
 
+.servicio2 h2,
 .servicio h2 {
-  color: #39489e;
-}
-
-.servicio2 h2 {
-  color: #6372c5;
+  color: #95a2ee;
 }
 
 .servicio p,
 .servicio2 p {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.1);
   padding: 15px;
   border-radius: 10px;
   color: white;
@@ -191,7 +184,7 @@ body {
   line-height: 1.5;
 }
 
-/* Donaciones */
+/* ===================== DONACIONES ===================== */
 .dontext {
   display: flex;
   justify-content: center;
@@ -213,7 +206,16 @@ a button {
   text-decoration: none;
 }
 
-/* Carrusel */
+h4 {
+  color: #ffffff;
+  margin-top: 10px;
+  background-color: #5c8ceb;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* ===================== CAROUSEL ===================== */
 .carousel-container {
   position: relative;
   max-width: 100%;
@@ -271,7 +273,7 @@ a button {
   padding: 15px;
 }
 
-/* Cards */
+/* ===================== CARDS ===================== */
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
@@ -297,11 +299,50 @@ a button {
   height: 100%;
 }
 
-h4 {
-  color: #ffffff;
-  margin-top: 10px;
-  background-color:#5c8ceb;
-  padding: 10px;
-  text-align: center;
-  border-radius: 10px;
+
+/* ===================== CAROUSEL ===================== */
+.carousel-text {
+  position: relative;
+  top: 55%;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+  z-index: 0;
+  margin-top: 20px;
+}
+
+
+.carousel-container {
+  box-shadow: 100px 4px 9px rgba(255, 255, 255, );
+}
+
+
+/* ===================== DIFUMINADOS ===================== */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(251, 253, 255) 100%);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.carousel-text {
+  position: relative;
+  z-index: 10;
+}
+
+/* ===================== FORM ===================== */
+
+form {
+  margin: 20px;
 }
